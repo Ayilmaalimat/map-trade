@@ -1,0 +1,26 @@
+
+.chart-section{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+.pip-line-in-map{
+    position: absolute;
+    top: 10%;
+    left: -80px;
+    width: 300px;
+    height: 300px;
+    z-index: 10;
+}
+.chart-block{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+#chart-line,#chart-column{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    height: 80px;
+    padding: 0 30px;
+}
+.header nav {
+    display: flex;
+}
+.header nav a {
+    font-weight: 600;
+    padding: 12px 10px;
+    border-top: 4px solid #3281FF;
+    margin-right: 10px;
+    color: #000000;
+}
+.header nav a:hover{
+    color: #3281FF;
+    border-top: 2px solid #3281FF;
+}
