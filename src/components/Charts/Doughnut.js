@@ -4,7 +4,7 @@ import {Doughnut} from "react-chartjs-2";
 import './Charts.css'
 
 const DoughnutChart = ()=>{
-    const colors = ['#705482','rgba(237,59,156,.3)']
+    const colors = ['#3281FF','rgba(237,59,156,.3)']
     const [data,setData] = useState( {
         labels: ['Весь оборот'],
         datasets: [{

@@ -9,11 +9,11 @@
 .header nav a {
     font-weight: 600;
     padding: 12px 10px;
-    border-top: 4px solid #3281FF;
+    border-top: 4px solid #F49316;
     margin-right: 10px;
     color: #000000;
 }
 .header nav a:hover{
-    color: #3281FF;
-    border-top: 2px solid #3281FF;
+    color: #F49316;
+    border-top: 2px solid #F49316;
 }

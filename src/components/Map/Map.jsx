@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import './Map.css'
 import AnyChart from "anychart-react";
 import anychart from 'anychart'
@@ -6,6 +6,9 @@ import {pointSorter} from "../../utils/pointSorter";
 import {connect} from "react-redux";
 import DoughnutChart from "../Charts/Doughnut";
 const Map = props=>{
+    useEffect(()=>{
+        document.querySelector('.anychart-credits').remove()
+    })
     const [points, setPoints] = useState([
     {toId: 6, fromId: 2, product: 1,year: 2021, points: {points: [42.614290, 76.833688,42.844110,74.558424],to: 'Чуйская область',from: 'Иссык-кульская область',product: 'Говядина'}},
     {toId: 2, fromId: 5, product: 2,year: 2021, points: {points:[42.485620, 72.122352,42.614290, 76.833688],to: 'Иссык-кульская область',from: 'Таласская область',curvature: -0.30,product: 'Баранина'}},
@@ -22,12 +25,6 @@ const Map = props=>{
 
 
     let map = anychart.map();
-    let chart1 = anychart.line([1, 2, 3]);
-    chart1.bounds(0, 0, '100%', '50%');
-    let chart2 = anychart.column();
-    chart2.column([3, 2, 1]);
-    chart2.line([3, 5, 6]);
-    chart2.bounds(0, '50%', '100%', '50%');
 
 
 
@@ -37,11 +34,12 @@ const Map = props=>{
     var connectorSeries = map
         .title("")
         .connector(data)
-        .startSize(2)
-        .endSize(1.5)
-        .fill('#455a64')
-        .stroke(null)
+        .startSize(6)
+        .endSize(0.2)
+        .fill(['#F49316', '#3281FF'], 4, null, "round")
+        .stroke(['#F49316', '#3281FF'], 4, null, "round")
         .curvature(0.75)
+
 
     connectorSeries
         .labels()
@@ -51,29 +49,21 @@ const Map = props=>{
         .offsetY(3)
         .position('100%')
         .format('{%to}');
-    connectorSeries
-        .markers()
-        .position('100%')
-        .size(4)
-        .fill('#1976d2')
-        .stroke('2 #E1E1E1')
-        .type('circle');
+    
+
     connectorSeries
         .hovered()
         .markers()
         .position('100%')
-        .size(4)
-        .fill('#455a64')
-        .stroke('2 #455a64')
-        .type('circle');
+        .size(20)
+
     connectorSeries.tooltip().title(false);
 
     connectorSeries
         .markers()
         .position('100%')
-        .size(8)
-        .fill('#455a64')
-        .stroke('2 #E1E1E1');
+        .size(15)
+        .fill('#F4CA16')
 
     connectorSeries
         .tooltip()
@@ -90,6 +80,7 @@ const Map = props=>{
                 '<br/>' +
                 '<span style="font-size: 12px; color: #E1E1E1">Товар: </span>' +
                 this.getData('product')
+
             );
         });
 
