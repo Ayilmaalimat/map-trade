@@ -10,17 +10,18 @@ const Map = props=>{
         document.querySelector('.anychart-credits').remove()
     })
     const [points, setPoints] = useState([
-    {toId: 6, fromId: 2, product: 1,year: 2021, points: {points: [42.614290, 76.833688,42.844110,74.558424],to: 'Чуйская область',from: 'Иссык-кульская область',product: 'Говядина'}},
-    {toId: 2, fromId: 5, product: 2,year: 2021, points: {points:[42.485620, 72.122352,42.614290, 76.833688],to: 'Иссык-кульская область',from: 'Таласская область',curvature: -0.30,product: 'Баранина'}},
-    {toId: 5, fromId: 4, product: 3,year: 2021, points: {points:[40.386513, 72.992115,42.485620, 72.122352],to : 'Таласская область',from: 'Ошская область',product: 'Лук'}},
-    {toId: 3, fromId: 6, product: 4,year: 2021, points: {points: [42.844110,74.558424,41.356819, 75.988367], to: 'Нарынская область',from: 'Чуйская область',product: 'Помидоры'}},
-    {toId: 5, fromId: 3, product: 5,year: 2021, points: {points: [41.356819, 75.988367,42.485620, 72.122352], to: 'Таласская область',from: 'Нарынская область',curvature: -0.75,product: 'Огурцы'}}
+    {fromId: 2,toId: 6,  product: 1,year: 2021, points: {points: [42.614290, 76.833688,42.844110,74.558424],from: 'Иссык-кульская область',to: 'Чуйская область',product: 'Говядина'}},
+    {fromId: 2,toId: 5,  product: 1,year: 2021, points: {points: [42.614290, 76.833688,42.485620, 72.122352],from: 'Иссык-кульская область',to: 'Таласская область',product: 'Говядина'}},
+    {fromId: 5,toId: 2,  product: 2,year: 2021, points: {points:[42.485620, 72.122352,42.614290, 76.833688],from: 'Таласская область',to: 'Иссык-кульская область',curvature: -0.30,product: 'Баранина'}},
+    {fromId: 4,toId: 5,  product: 3,year: 2021, points: {points:[40.386513, 72.992115,42.485620, 72.122352],from: 'Ошская область',to : 'Таласская область',product: 'Лук'}},
+    {fromId: 6,toId: 3,  product: 4,year: 2021, points: {points: [42.844110,74.558424,41.356819, 75.988367], from: 'Чуйская область',to: 'Нарынская область',product: 'Помидоры'}},
+    {fromId: 3,toId: 5,  product: 5,year: 2021, points: {points: [41.356819, 75.988367,42.485620, 72.122352], from: 'Нарынская область', to: 'Таласская область',curvature: -0.75,product: 'Огурцы'}}
     ])
     let data = anychart.data.set(pointSorter(points,{
-        sortToClient: props.sortToClient,
-        sortToProduct: props.sortToProduct,
-        sortToSupplier: props.sortToSupplier,
-        sortToYear: props.sortToYear,
+        toId: props.sortToClient,
+        product: props.sortToProduct,
+        fromId: props.sortToSupplier,
+        year: props.sortToYear,
     }))
 
 

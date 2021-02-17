@@ -8,8 +8,8 @@ const Header = props =>{
         <div className={'header'}>
                 <div className="logo"><img src="" alt=""/></div>
                 <nav>
-                    <Link to="#">Данные</Link>
-                    <Link  to="#">О нас</Link>
+                    <Link to="/">Данные</Link>
+                    <Link  to="/about">О нас</Link>
                 </nav>
             </div>
     )
