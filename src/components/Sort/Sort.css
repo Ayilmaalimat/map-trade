@@ -27,6 +27,9 @@
     overflow: visible;
     cursor: pointer;
  }
+.sort-section__selector span{
+    width: 100%;
+}
 .sort-section__selector::after{
      content: "";
      position: absolute;
