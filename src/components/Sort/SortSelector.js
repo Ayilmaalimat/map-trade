@@ -7,9 +7,9 @@ const SortSelector = props =>{
     const elements = props.data.map(item=>{
         return <SortSelectorItem
             dataIndex={props.dataIndex}
-            key={item?.id ? item.id : item}
-            name={item.name ? item.name : item}
-            id={item.id ? item.id : item}
+            key={item?.id}
+            name={item.name}
+            id={item.id}
             handleClickItem={props.handleClickItem}/>
     })
     return(
