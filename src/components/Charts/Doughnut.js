@@ -3,31 +3,14 @@ import React, {useState} from "react";
 import {Doughnut} from "react-chartjs-2";
 import './Charts.css'
 
-const DoughnutChart = ()=>{
-    const colors = ['#3281FF','rgba(237,59,156,.3)']
-    const [data,setData] = useState( {
-        labels: ['Весь оборот'],
-        datasets: [{
-            data: [230000],
-            backgroundColor: colors[0],
-            borderWidth: 1
-        }],
-    })
-
-    const options = {
-        title: {
-            display: true,
-                text: "Доля всей торговли"
-        },
-        circumference: 4.8,
-            rotation: 2.3
-    }
+const DoughnutChart = props=>{
     return(
-        <div className={'pip-line-in-map'}>
+        <div style={props.style}>
         <Doughnut
-            data={data}
-            options={options}
+            data={props.data}
+            options={props.options}
         />
+        <span className={'chart-percent'}>{props.percent}</span>
         </div>
     )
 }

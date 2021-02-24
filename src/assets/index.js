@@ -1,3 +1,3 @@
 import closeSVG from './icons/close.svg'
-
-export {closeSVG}
+import arrowRightSVG from './icons/right-arrow.svg'
+export {arrowRightSVG,closeSVG}

@@ -10,3 +10,55 @@
     width: 100%;
     height: 100%;
 }
+.custom-tooltip {
+    visibility: hidden;
+    pointer-events: none;
+    position: absolute;
+    background: #ffffff;
+    -webkit-box-shadow: 3px 1px 7px 2px rgba(209,209,209,1);
+    -moz-box-shadow: 3px 1px 7px 2px rgba(209,209,209,1);
+    box-shadow: 3px 1px 7px 2px rgba(209,209,209,1);
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+
+.tooltipInfo{
+    display: flex;
+    align-items: center;
+    width: 300px;
+}
+.tooltipChart{
+    position: relative;
+    width: 50%;
+    height: 100px;
+
+}
+.tooltipInfo h2{
+    font-size: 2.8em;
+    margin-top: -15px;
+}
+.mapTooltipLocation{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-size: 0.9em;
+    width: 100%;
+    font-weight: bold;
+}
+
+.mapTooltip-arrowRight{
+    height: 20px;
+    width: 100%;
+}
+.mapTooltipLocation span{
+    width: 150px;
+}
+.tooltipData-to{
+    text-align: end;
+}
+.tooltipData-product{
+    margin-bottom: 10px;
+}
