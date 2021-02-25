@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.5578faaa.chunk.css",
-    "main.js": "/static/js/main.7123b322.chunk.js",
-    "main.js.map": "/static/js/main.7123b322.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.4216a829.js",
-    "runtime-main.js.map": "/static/js/runtime-main.4216a829.js.map",
-    "static/js/2.35bfa121.chunk.js": "/static/js/2.35bfa121.chunk.js",
-    "static/js/2.35bfa121.chunk.js.map": "/static/js/2.35bfa121.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.e81c09dc9268949ce5bb48ee6dd7fa35.js": "/precache-manifest.e81c09dc9268949ce5bb48ee6dd7fa35.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.5578faaa.chunk.css.map": "/static/css/main.5578faaa.chunk.css.map",
-    "static/js/2.35bfa121.chunk.js.LICENSE.txt": "/static/js/2.35bfa121.chunk.js.LICENSE.txt",
-    "static/media/close.svg": "/static/media/close.107181e4.svg",
-    "static/media/right-arrow.svg": "/static/media/right-arrow.53540829.svg"
+    "main.css": "/map-trade/static/css/main.5578faaa.chunk.css",
+    "main.js": "/map-trade/static/js/main.fa7a08a8.chunk.js",
+    "main.js.map": "/map-trade/static/js/main.fa7a08a8.chunk.js.map",
+    "runtime-main.js": "/map-trade/static/js/runtime-main.7d50a5b2.js",
+    "runtime-main.js.map": "/map-trade/static/js/runtime-main.7d50a5b2.js.map",
+    "static/js/2.ac4a9b19.chunk.js": "/map-trade/static/js/2.ac4a9b19.chunk.js",
+    "static/js/2.ac4a9b19.chunk.js.map": "/map-trade/static/js/2.ac4a9b19.chunk.js.map",
+    "index.html": "/map-trade/index.html",
+    "precache-manifest.51706b7f1ded0433c31ccb4def82cc7d.js": "/map-trade/precache-manifest.51706b7f1ded0433c31ccb4def82cc7d.js",
+    "service-worker.js": "/map-trade/service-worker.js",
+    "static/css/main.5578faaa.chunk.css.map": "/map-trade/static/css/main.5578faaa.chunk.css.map",
+    "static/js/2.ac4a9b19.chunk.js.LICENSE.txt": "/map-trade/static/js/2.ac4a9b19.chunk.js.LICENSE.txt",
+    "static/media/close.svg": "/map-trade/static/media/close.107181e4.svg",
+    "static/media/right-arrow.svg": "/map-trade/static/media/right-arrow.53540829.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.4216a829.js",
-    "static/js/2.35bfa121.chunk.js",
+    "static/js/runtime-main.7d50a5b2.js",
+    "static/js/2.ac4a9b19.chunk.js",
     "static/css/main.5578faaa.chunk.css",
-    "static/js/main.7123b322.chunk.js"
+    "static/js/main.fa7a08a8.chunk.js"
   ]
 }
