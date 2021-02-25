@@ -32,11 +32,11 @@ const ChartContainer = props=>{
     useEffect(()=>{
         const route = props.history.location.pathname
         switch (route) {
-            case '/trade-flow': setData(tradeFlow);break;
-            case '/': setData(tradeFlow);break;
-            case '/products' : setData(products);break;
-            case '/client' : setData(imports);break;
-            case '/provide' : setData(exports);break;
+            case '/map-trade/trade-flow': setData(tradeFlow);break;
+            case '/map-trade': setData(tradeFlow);break;
+            case '/map-trade/products' : setData(products);break;
+            case '/map-trade/client' : setData(imports);break;
+            case '/map-trade/provide' : setData(exports);break;
             default: setData(tradeFlow)
         }
     },[props.history.location.pathname])

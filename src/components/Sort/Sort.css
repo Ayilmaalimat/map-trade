@@ -4,7 +4,6 @@
 .sort-section{
     padding: 0 30px;
     z-index: 10;
-    backdrop-filter: blur(2px);
 }
 .sort-section {
     display: flex;

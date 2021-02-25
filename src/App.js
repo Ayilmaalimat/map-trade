@@ -7,8 +7,8 @@ import NotFoundPage from "./pages/404/404";
 const App = props =>{
     return(
       <Switch>
-          <Route path={["/", "/trade-flow", "/products", "/provide", "/client"]} exact component={DataPage}/>
-          <Route path={'*'} exact  component={NotFoundPage} />
+          <Route path={["/map-trade", "/map-trade/trade-flow", "/map-trade/products", "/map-trade/provide", "/map-trade/client"]} exact component={DataPage}/>
+          <Route path={'/map-trade/*'} exact  component={NotFoundPage} />
       </Switch>
     )
 }

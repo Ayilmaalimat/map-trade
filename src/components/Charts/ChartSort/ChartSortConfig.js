@@ -1,20 +1,20 @@
 export const chartSortConfig = [
     {
-        to: '/trade-flow',
+        to: '/map-trade/trade-flow',
         name: 'Товарооборот',
     },
     {
-        to: '/products',
+        to: '/map-trade/products',
         name: 'Товары',
 
     },
     {
-        to: '/provide',
+        to: '/map-trade/provide',
         name: 'Поставка',
 
     },
     {
-        to: '/client',
+        to: '/map-trade/client',
         name: 'Прием',
 
     },

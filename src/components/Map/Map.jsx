@@ -6,7 +6,7 @@ import {pointSorter} from "../../utils/pointSorter";
 import {connect} from "react-redux";
 import DoughnutChart from "../Charts/Doughnut";
 import {arrowRightSVG} from "../../assets";
-import Preloader from "../Preloader/Preloader";
+
 
 const  Map = (props)=> {
 
@@ -24,10 +24,7 @@ const  Map = (props)=> {
 
 
      useEffect(()=>{
-         const element = document.querySelector('.anychart-credits')
-         if(element){
-             element.remove()
-         }
+         document.querySelector('.anychart-credits').remove()
      },[])
 
 

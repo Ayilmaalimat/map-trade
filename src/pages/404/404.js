@@ -15,7 +15,7 @@ const NotFoundPage = props =>{
 
                                 <p>Страница не найдена, либо находится в разработке</p>
 
-                                <Link to={'/'} className="link_404">На главную</Link>
+                                <Link to={'/map-trade'} className="link_404">На главную</Link>
                             </div>
         </section>
     )
